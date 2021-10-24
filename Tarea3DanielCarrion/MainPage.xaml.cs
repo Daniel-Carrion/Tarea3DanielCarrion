@@ -20,8 +20,15 @@ namespace Tarea3DanielCarrion
             try
             {
                 string usuario = txtUsuario.Text;
+                string clave = txtClave.Text;
+                if ((usuario.Equals("estudiante2021")) && (clave.Equals("uisrael2021")))
+                {
+                    await Navigation.PushAsync(new vistaDos(usuario));
+                }
+                else
+                    await DisplayAlert("Mensaje de alerta", "Usuario y/o clave incorrectos","ok");
 
-                await Navigation.PushAsync(new vistaDos(usuario));
+                
             }
             catch (Exception ex)
             {
