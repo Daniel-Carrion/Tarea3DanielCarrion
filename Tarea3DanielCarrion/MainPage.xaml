@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Tarea3DanielCarrion.MainPage">
+
+    <StackLayout>
+        <Frame BackgroundColor="DarkBlue" Padding="24" CornerRadius="0">
+            <Label Text="Tarea semana 3 Daniel Carrión" HorizontalTextAlignment="Center" TextColor="White" FontSize="36"/>
+        </Frame>
+        <Label Text="Ingrese su usuario"/>
+        <Entry x:Name="txtUsuario"/>
+        <Label Text="Ingrese su clave"/>
+        <Entry x:Name="txtClave" IsPassword="True"/>
+
+        <Button x:Name="btnIngresar" Text="Ingresar" Clicked="btnIngresar_Clicked"/>
+
+    </StackLayout>
+
+</ContentPage>
